@@ -13,7 +13,7 @@ The purpose of this project was to use python and jupyter notebook to gain a bas
 
 ## Analysis:
 
-### Overview of the analysis: Explain the purpose of this analysis.
+### Overview: 
 In order to achieve the above, I analyzed credit card risk data for a peer-to-peer lending services company, called LendingClub.  The dataset was a csv file containing 115,676 rows of data, and 86 columns initially.  As part of the pre-processing, I used the get_dummies method to convert the string values of multiple columns into numerical values, resulting in 95 columns(features), once the target column (loan_status) was removed.  I then used the following models to predict low_risk or high_risk loan_status, based on the previously mentioned 95 features:
 
 * Naive Random Sampling (RandomOverSampler from imblearn)
@@ -31,7 +31,7 @@ For each model:
 * for the BalancedRandomForestClassifier model, I also listed the features with their corresponding importance values in descending order
 
 
-### Results: Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all six machine learning models. Use screenshots of your outputs to support your results.
+### Results:
 
 Model 1: Naive Random Sampling (RandomOverSampler) <br>
 Balanced Accuracy Score: 0.6614329112986135 <br>
@@ -40,7 +40,7 @@ Recall Score: high_risk - 0.72; low_risk - 0.60 <br>
 
 ![This is an image](https://github.com/bartblack13/Credit_Risk_Analysis/blob/main/Module-17-Challenge-Resources/Resources/RandomOverSampler.png)
 <br>
-**Figure 1: RandomOverSampler Classification Report**<br>
+**Figure 1: RandomOverSampler Classification Report**<br><br>
 
 Model 2: Synthetic Minority Oversampling Technique (SMOTE) <br>
 Balanced Accuracy Score: 0.6581159869962674 <br>
@@ -49,7 +49,7 @@ Recall Score: high_risk - 0.62; low_risk - 0.69 <br>
 
 ![This is an image](https://github.com/bartblack13/Credit_Risk_Analysis/blob/main/Module-17-Challenge-Resources/Resources/SMOTE.png)
 <br>
-**Figure 2: SMOTE Classification Report**<br>
+**Figure 2: SMOTE Classification Report**<br><br>
 
 Model 3: Undersampling (ClusterCentroids) <br>
 Balanced Accuracy Score: 0.5442661782548694 <br>
@@ -58,7 +58,7 @@ Recall Score: high_risk - 0.69; low_risk - 0.40<br>
 
 ![This is an image](https://github.com/bartblack13/Credit_Risk_Analysis/blob/main/Module-17-Challenge-Resources/Resources/ClusterCentroid.png)
 <br>
-**Figure 3: ClusterCentroids Classification Report**<br>
+**Figure 3: ClusterCentroids Classification Report**<br><br>
 
 Model 4: Combination Over and undersampling (SMOTEENN) <br>
 Balanced Accuracy Score: 0.6449163069955265 <br>
@@ -67,7 +67,7 @@ Recall Score: high_risk - 0.72; low_risk - 0.57 <br>
 
 ![This is an image](https://github.com/bartblack13/Credit_Risk_Analysis/blob/main/Module-17-Challenge-Resources/Resources/SMOTEENN.png)
 <br>
-**Figure 4: SMOTEENN Classification Report**<br>
+**Figure 4: SMOTEENN Classification Report**<br><br>
 
 Model 5: Ensemble Learning (BalancedRandomForestClassifier) <br>
 Balanced Accuracy Score: 0.7885466545953005 <br>
@@ -76,7 +76,7 @@ Recall Score: high_risk - 0.70; low_risk - 0.87 <br>
 
 ![This is an image](https://github.com/bartblack13/Credit_Risk_Analysis/blob/main/Module-17-Challenge-Resources/Resources/BalancedRandomForest.png)
 <br>
-**Figure 5: BalancedRandomForestClassifier Classification Report**<br>
+**Figure 5: BalancedRandomForestClassifier Classification Report**<br><br>
 
 Model 6: Ensemble Learning (EasyEnsembleClassifier) <br>
 Balanced Accuracy Score: 0.9316600714093861 <br>
@@ -85,7 +85,7 @@ Recall Score: high_risk - 0.92; low_risk - 0.94 <br>
 
 ![This is an image](https://github.com/bartblack13/Credit_Risk_Analysis/blob/main/Module-17-Challenge-Resources/Resources/ADAboost.png)
 <br>
-**Figure 6: EasyEnsembleClassifier (ADAboost) Classification Report**<br>
+**Figure 6: EasyEnsembleClassifier (ADAboost) Classification Report**<br><br>
 
 
 ### Summary: Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. If you do not recommend any of the models, justify your reasoning.
