@@ -38,42 +38,58 @@ Balanced Accuracy Score: 0.6614329112986135 <br>
 Precision Score: high_risk - 0.01; low_risk - 1.0 <br>
 Recall Score: high_risk - 0.72; low_risk - 0.60 <br>
 
-![This is an image]()
+![This is an image](https://github.com/bartblack13/Credit_Risk_Analysis/blob/main/Module-17-Challenge-Resources/Resources/RandomOverSampler.png)
+<br>
+**Figure 1: RandomOverSampler Classification Report**<br>
 
 Model 2: Synthetic Minority Oversampling Technique (SMOTE) <br>
 Balanced Accuracy Score: 0.6581159869962674 <br>
 Precision Score: high_risk - 0.01; low_risk - 1.0 <br>
 Recall Score: high_risk - 0.62; low_risk - 0.69 <br>
 
-![This is an image]()
+![This is an image](https://github.com/bartblack13/Credit_Risk_Analysis/blob/main/Module-17-Challenge-Resources/Resources/SMOTE.png)
+<br>
+**Figure 2: SMOTE Classification Report**<br>
 
 Model 3: Undersampling (ClusterCentroids) <br>
 Balanced Accuracy Score: 0.5442661782548694 <br>
 Precision Score: high_risk - 0.01; low_risk - 1.0 <br>
 Recall Score: high_risk - 0.69; low_risk - 0.40<br>
 
-![This is an image]()
+![This is an image](https://github.com/bartblack13/Credit_Risk_Analysis/blob/main/Module-17-Challenge-Resources/Resources/ClusterCentroid.png)
+<br>
+**Figure 3: ClusterCentroids Classification Report**<br>
 
 Model 4: Combination Over and undersampling (SMOTEENN) <br>
 Balanced Accuracy Score: 0.6449163069955265 <br>
 Precision Score: high_risk - 0.01; low_risk - 1.0 <br>
 Recall Score: high_risk - 0.72; low_risk - 0.57 <br>
 
-![This is an image]()
+![This is an image](https://github.com/bartblack13/Credit_Risk_Analysis/blob/main/Module-17-Challenge-Resources/Resources/SMOTEENN.png)
+<br>
+**Figure 4: SMOTEENN Classification Report**<br>
 
 Model 5: Ensemble Learning (BalancedRandomForestClassifier) <br>
 Balanced Accuracy Score: 0.7885466545953005 <br>
 Precision Score: high_risk - 0.03; low_risk - 1.0 <br>
 Recall Score: high_risk - 0.70; low_risk - 0.87 <br>
 
-![This is an image]()
+![This is an image](https://github.com/bartblack13/Credit_Risk_Analysis/blob/main/Module-17-Challenge-Resources/Resources/BalancedRandomForest.png)
+<br>
+**Figure 5: BalancedRandomForestClassifier Classification Report**<br>
 
 Model 6: Ensemble Learning (EasyEnsembleClassifier) <br>
 Balanced Accuracy Score: 0.9316600714093861 <br>
 Precision Score: high_risk - 0.09; low_risk - 1.0 <br>
 Recall Score: high_risk - 0.92; low_risk - 0.94 <br>
 
-![This is an image]()
+![This is an image](https://github.com/bartblack13/Credit_Risk_Analysis/blob/main/Module-17-Challenge-Resources/Resources/ADAboost.png)
+<br>
+**Figure 6: EasyEnsembleClassifier (ADAboost) Classification Report**<br>
 
 
 ### Summary: Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. If you do not recommend any of the models, justify your reasoning.
+
+![This is an image](https://github.com/bartblack13/Credit_Risk_Analysis/blob/main/Module-17-Challenge-Resources/Resources/importances%20BRFC.png)
+<br>
+**Figure 7: BalancedRandomForestClassifier Feature Importances**<br>
